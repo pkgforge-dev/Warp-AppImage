@@ -19,6 +19,13 @@ wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
 chmod +x ./quick-sharun
 ./quick-sharun /usr/bin/warp
 
+## Copy help files for Help section to work
+langs=$(find /usr/share/help/*/warp/ -type f | awk -F'/' '{print $5}' | sort | uniq)
+for lang in $langs; do
+  mkdir -p ./AppDir/share/help/$lang/warp/
+  cp -vr /usr/share/help/$lang/warp/* ./AppDir/share/help/$lang/warp/
+done
+
 ## Set gsettings to save to keyfile, instead to dconf
 echo "GSETTINGS_BACKEND=keyfile" >> ./AppDir/.env
 
