@@ -37,4 +37,4 @@ More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/
 - If portable `.config` and/or `.home` directory is used, app fails to detect `XDG_DOWNLOAD_DIR` when receiving the file.  
   This part should be patched to handle it:  
   https://gitlab.gnome.org/World/warp/-/blob/main/src/ui/fs.rs#L11-20  
-  - Meanwhile, without those 2 portable folders, only `${XDG_CONFIG_HOME}/warp/config.json would be made on the host, which you can delete after the app uninstallation.
+  - Meanwhile, without those 2 portable folders, only `${XDG_CONFIG_HOME}/warp/config.json` would be made on the host, which you can delete after the app uninstallation.
