@@ -12,6 +12,7 @@ export OUTNAME=Warp-"$VERSION"-anylinux-"$ARCH".AppImage
 export DESKTOP=/usr/share/applications/app.drey.Warp.desktop
 export ICON=/usr/share/icons/hicolor/scalable/apps/app.drey.Warp.svg
 export DEPLOY_OPENGL=1
+export DEPLOY_PIPEWIRE=1 # For camera portal
 export STARTUPWMCLASS=warp # For Wayland, this is 'app.drey.Warp', so this needs to be changed in desktop file manually by the user in that case until some potential automatic fix exists for this
 
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
