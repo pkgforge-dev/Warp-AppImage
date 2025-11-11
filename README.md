@@ -42,3 +42,5 @@ More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/
   This part should be patched to handle it:  
   https://gitlab.gnome.org/World/warp/-/blob/main/src/ui/fs.rs#L11-20  
   - Meanwhile, without those 2 portable folders, only `${XDG_CONFIG_HOME}/warp/config.json` would be made on the host, which you can delete after the app uninstallation.
+- Help page only works if `gnome-help` or other similar `.page` viewer is installed on the host's system.  
+Bundling the help page viewer in the AppImage would make it work everywhere, but it's both bad for the file size and [security](https://blogs.gnome.org/mcatanzaro/2025/04/15/dangerous-arbitrary-file-read-vulnerability-in-yelp-cve-2025-3155/), hence why we don't do that.
