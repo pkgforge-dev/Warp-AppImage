@@ -27,9 +27,6 @@ for lang in $langs; do
   cp -vr /usr/share/help/$lang/warp/* ./AppDir/share/help/$lang/warp/
 done
 
-## Set gsettings to save to keyfile, instead to dconf
-echo "GSETTINGS_BACKEND=keyfile" >> ./AppDir/.env
-
 # Make the AppImage with uruntime
 ./quick-sharun --make-appimage
 
