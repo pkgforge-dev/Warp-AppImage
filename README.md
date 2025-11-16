@@ -1,7 +1,7 @@
 # Warp-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Warp-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Warp-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/Warp-AppImage/actions/workflows/blank.yml/badge.svg)](https://github.com/pkgforge-dev/Warp-AppImage/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/Warp-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Warp-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://gitlab.gnome.org/World/warp/-/raw/main/data/icons/app.drey.Warp.svg?ref_type=heads" width="128" />
