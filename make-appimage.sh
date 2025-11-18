@@ -15,14 +15,8 @@ export DEPLOY_PIPEWIRE=1 # For camera portal
 export STARTUPWMCLASS=warp # For Wayland, this is 'app.drey.Warp', so this needs to be changed in desktop file manually by the user in that case until some potential automatic fix exists for this
 
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
-quick-sharun /usr/bin/warp
-
-## Copy help files for Help section to work
-langs=$(find /usr/share/help/*/warp/ -type f | awk -F'/' '{print $5}' | sort | uniq)
-for lang in $langs; do
-  mkdir -p ./AppDir/share/help/$lang/warp/
-  cp -vr /usr/share/help/$lang/warp/* ./AppDir/share/help/$lang/warp/
-done
+quick-sharun /usr/bin/warp \
+             /usr/share/help/*/warp
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
