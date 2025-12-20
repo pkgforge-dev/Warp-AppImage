@@ -12,6 +12,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/app.drey.Warp.svg
 export DESKTOP=/usr/share/applications/app.drey.Warp.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1 # For camera portal
+export STARTUPWMCLASS=app.drey.Warp # Default to Wayland's wmclass. For X11, GTK_CLASS_FIX will force the wmclass to be the Wayland one.
 export GTK_CLASS_FIX=1
 
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
