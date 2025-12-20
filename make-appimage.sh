@@ -12,7 +12,6 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/app.drey.Warp.svg
 export DESKTOP=/usr/share/applications/app.drey.Warp.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1 # For camera portal
-export STARTUPWMCLASS=warp
 export GTK_CLASS_FIX=1
 
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
