@@ -1,3 +1,5 @@
+<div align="center">
+
 # Warp AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Warp-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Warp-AppImage/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://gitlab.gnome.org/World/warp/-/raw/main/data/icons/app.drey.Warp.svg?ref_type=heads" width="128" />
 </p>
 
-* [Upstream URL](https://gitlab.gnome.org/World/warp)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Warp-AppImage/releases/latest) | [Click here](https://gitlab.gnome.org/World/warp) |
+
+</div>
 
 ---
 
